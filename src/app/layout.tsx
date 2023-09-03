@@ -1,5 +1,3 @@
-"use client";
-
 import Navbar from "@/components/Navbar";
 import Blob from "@/components/Blob";
 import "@/styles/globals.css";
