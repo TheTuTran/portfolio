@@ -4,7 +4,7 @@ interface PlusCrosshairProps {}
 
 const PlusCrosshair: FC<PlusCrosshairProps> = ({}) => {
   return (
-    <section className="fixed inset-[50%] translate-x-[-50%] translate-y-[-50%] text-md z-10 text-white">
+    <section className="fixed inset-[50%] translate-x-[-50%] translate-y-[-50%] text-md z-5 text-white/50">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"

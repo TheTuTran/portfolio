@@ -1,5 +1,7 @@
 "use client";
+
 import Navbar from "@/components/Navbar";
+import Blob from "@/components/Blob";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -16,12 +18,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-hidden scroll-smooth">
       <body
-        className={`${inter.className} dark overflow-hidden bg-background m-0 h-[100vh] w-[100vw]`}
+        className={`${inter.className} dark bg-background m-0 h-[100vh] w-[100vw]`}
       >
         <Navbar />
-        <div className="min-h-screen mx-auto flex justify-center max-w-7xl main mt-[4rem]">
+        <Blob />
+
+        <div className="select-none min-h-screen mx-auto flex justify-center max-w-6xl main mt-[4rem]">
           {children}
         </div>
       </body>

@@ -5,10 +5,9 @@ import { FC, RefObject } from "react";
 interface CardTrackProps {
   scroll: number;
   trackRef: RefObject<HTMLDivElement>;
-  setView: (view: string) => void;
 }
 
-const CardTrack: FC<CardTrackProps> = ({ scroll, trackRef, setView }) => {
+const CardTrack: FC<CardTrackProps> = ({ scroll, trackRef }) => {
   return (
     <section
       className="absolute left-[50%] top-[50%]"
@@ -21,12 +20,12 @@ const CardTrack: FC<CardTrackProps> = ({ scroll, trackRef, setView }) => {
       <div className="flex gap-5">
         {CARDS.map((card, index) => (
           <Card
+            key={index}
             src={card.image}
             text={card.text}
             destination={card.destination}
             indx={index}
             scroll={scroll}
-            setView={setView}
           />
         ))}
       </div>
