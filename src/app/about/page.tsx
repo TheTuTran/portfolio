@@ -37,7 +37,7 @@ const About: FC<AboutProps> = () => {
   }, []);
 
   const openPdf = () => {
-    window.open("path_to_your_pdf.pdf", "_blank");
+    window.open("/TuTranResume.pdf", "_blank");
   };
 
   return (
