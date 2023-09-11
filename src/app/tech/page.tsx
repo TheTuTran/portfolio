@@ -15,7 +15,7 @@ const Tech: FC<TechProps> = ({}) => {
       <div className="flex pt-4">
         <div className="w-full pr-8">
           {Object.keys(TECH_STACK_CATEGORIES).map((category, index) => (
-            <div key={index} id={category} className="mb-16">
+            <div key={index} id={category} className="mb-16 max-w-[60vw] ">
               <h2 className="text-2xl font-semibold mb-4 border-b-2 border-gray-700 pb-2 w-full">
                 {category}
               </h2>

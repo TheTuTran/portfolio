@@ -18,12 +18,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="overflow-hidden scroll-smooth">
       <body
-        className={`${inter.className} dark bg-background m-0 h-[100vh] w-[100vw]`}
+        className={`${inter.className} select-none dark bg-background m-0 h-[100vh] w-[100vw]`}
       >
         <Navbar />
         <Blob />
 
-        <div className="select-none min-h-screen mx-auto flex justify-center max-w-6xl main mt-[4rem]">
+        <div className="min-h-screen mx-auto flex justify-center max-w-6xl main mt-[4rem]">
           {children}
         </div>
       </body>
