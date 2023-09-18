@@ -18,6 +18,10 @@ const Navbar = () => {
   const hoverAnimation =
     "hover:text-white active:scale-100 transition-transform transform hover:scale-105";
 
+  if (pathname == "/") {
+    return;
+  }
+
   return (
     <nav className="flex justify-center gap-[3rem] mt-[2rem] text-gray-500 font-bold z-40">
       {currentIndex > 0 ? (

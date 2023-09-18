@@ -8,7 +8,7 @@ type IconKeys = keyof typeof Icons;
 
 const TechStackSideButtons: FC<TechStackSideButtonsProps> = ({}) => {
   return (
-    <section className="fixed right-0 bottom-0 h-[90%] w-[20%] flex flex-col justify-around mb-10 items-center ">
+    <section className="bg-gray-800 transition fixed right-0 bottom-0 h-full w-[20%] flex flex-col justify-around items-center ">
       {Object.keys(TECH_STACK_CATEGORIES).map((category) => {
         const IconComponent = Icons[category as IconKeys];
         return (

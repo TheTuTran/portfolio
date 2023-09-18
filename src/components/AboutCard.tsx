@@ -11,11 +11,6 @@ function About() {
     const createWord = (text: string, index: number) => {
       const word = document.createElement("span");
 
-      /*
-      if (!subtitle || subtitle.innerText.trim() !== "") {
-        return;
-      }
-      */
       word.innerHTML = `${text} `;
 
       word.classList.add("card-subtitle-word");
@@ -40,8 +35,8 @@ function About() {
       <div className="card">
         <div className="card-content">
           <h3 className="card-title">
-            Hello! I&apos;m Tu, a full stack developer with experience in
-            building modern web applications. I love coding and learning new
+            I&apos;m Tu, a full stack developer with experience in building
+            modern web applications. I love coding and learning new
             technologies. I like to think I know what I&apos;m doing. (hover
             over me)
           </h3>

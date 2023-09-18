@@ -41,7 +41,7 @@ const About: FC<AboutProps> = () => {
   };
 
   return (
-    <section className="w-full flex flex-col items-center">
+    <div className="w-full flex flex-col items-center">
       <section className="min-h-[80vh]">
         <h1 className="text-4xl text-center font-bold mb-8">About Me</h1>
 
@@ -62,6 +62,16 @@ const About: FC<AboutProps> = () => {
 
         <section className="w-full flex flex-col items-center min-h-[20vh]">
           <h2 className="text-3xl text-center font-bold mb-4">Education</h2>
+          <p className="text-lg mb-4 text-slate-400">
+            I&apos;m set to graduate from Saint Louis University with a major in
+            Computer Science and minor in Mathematics in May of 2024. More on my
+            resume{" "}
+            <ImNewTab className="cursor-pointer inline" onClick={openPdf} />
+          </p>
+        </section>
+
+        <section className="w-full flex flex-col items-center min-h-[20vh]">
+          <h2 className="text-3xl text-center font-bold mb-4">Certificates</h2>
           <p className="text-lg mb-4 text-slate-400">
             I&apos;m set to graduate from Saint Louis University with a major in
             Computer Science and minor in Mathematics in May of 2024. More on my
@@ -129,7 +139,7 @@ const About: FC<AboutProps> = () => {
           </div>
         </section>
       </div>
-    </section>
+    </div>
   );
 };
 

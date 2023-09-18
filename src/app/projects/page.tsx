@@ -7,7 +7,7 @@ interface ProjectsProps {}
 
 const Projects: FC<ProjectsProps> = ({}) => {
   return (
-    <section className="w-full">
+    <div className="w-full">
       <h1 className="text-4xl text-center font-bold mb-8">My Projects</h1>
 
       <div className="grid grid-cols-2 gap-8 pt-4">
@@ -62,7 +62,7 @@ const Projects: FC<ProjectsProps> = ({}) => {
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 

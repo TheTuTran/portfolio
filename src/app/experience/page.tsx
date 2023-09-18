@@ -5,7 +5,7 @@ interface ExperienceProps {}
 
 const Experience: FC<ExperienceProps> = ({}) => {
   return (
-    <section className="w-full">
+    <div className="w-full">
       <h1 className="text-4xl text-center font-bold mb-8">
         Working Experience
       </h1>
@@ -24,7 +24,7 @@ const Experience: FC<ExperienceProps> = ({}) => {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
