@@ -17,6 +17,7 @@ import {
   FaRProject,
   FaCoffee,
   FaTree,
+  FaGraduationCap,
 } from "react-icons/fa";
 import {
   SiTypescript,
@@ -34,10 +35,27 @@ import {
   SiJunit5,
   SiPrisma,
 } from "react-icons/si";
-import { BiLogoJquery } from "react-icons/bi";
+import { BiLogoDocker, BiLogoJquery, BiLogoNetlify } from "react-icons/bi";
 import { VscDebugAll } from "react-icons/vsc";
+import { AiFillGithub, AiFillGitlab, AiOutlineLaptop } from "react-icons/ai";
+import { GiClassicalKnowledge } from "react-icons/gi";
+import { IoLogoVercel } from "react-icons/io5";
+import { PiCertificateBold } from "react-icons/pi";
+import { BsFillBootstrapFill } from "react-icons/bs";
 
 export const Icons = {
+  "Hobbies & Interests": ({ className }: LucideProps) => (
+    <AiOutlineLaptop className={className} />
+  ),
+  Education: ({ className }: LucideProps) => (
+    <GiClassicalKnowledge className={className} />
+  ),
+  Certificates: ({ className }: LucideProps) => (
+    <PiCertificateBold className={className} />
+  ),
+  "Relevant Coursework": ({ className }: LucideProps) => (
+    <FaGraduationCap className={className} />
+  ),
   Languages: ({ className }: LucideProps) => <FaCode className={className} />,
   "Frontend Frameworks": ({ className }: LucideProps) => (
     <FaReact className={className} />
@@ -86,6 +104,9 @@ export const Icons = {
   PostgreSQL: ({ className }: LucideProps) => (
     <SiPostgresql className={className} />
   ),
+  Bootstrap: ({ className }: LucideProps) => (
+    <BsFillBootstrapFill className={className} />
+  ),
   MySQL: ({ className }: LucideProps) => <SiMysql className={className} />,
   SQLite: ({ className }: LucideProps) => <SiSqlite className={className} />,
   MongoDB: ({ className }: LucideProps) => <SiMongodb className={className} />,
@@ -98,6 +119,21 @@ export const Icons = {
   AWS: ({ className }: LucideProps) => <FaAws className={className} />,
   "Google Cloud Platform": ({ className }: LucideProps) => (
     <SiGooglecloud className={className} />
+  ),
+  GitHub: ({ className }: LucideProps) => (
+    <AiFillGithub className={className} />
+  ),
+  GitLab: ({ className }: LucideProps) => (
+    <AiFillGitlab className={className} />
+  ),
+  Vercel: ({ className }: LucideProps) => (
+    <IoLogoVercel className={className} />
+  ),
+  Netlify: ({ className }: LucideProps) => (
+    <BiLogoNetlify className={className} />
+  ),
+  Docker: ({ className }: LucideProps) => (
+    <BiLogoDocker className={className} />
   ),
   Jest: ({ className }: LucideProps) => <SiJest className={className} />,
   Mocha: ({ className }: LucideProps) => <FaCoffee className={className} />,

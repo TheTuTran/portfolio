@@ -37,8 +37,7 @@ function About() {
           <h3 className="card-title">
             I&apos;m Tu, a full stack developer with experience in building
             modern web applications. I love coding and learning new
-            technologies. I like to think I know what I&apos;m doing. (hover
-            over me)
+            technologies. I like to think I know what I&apos;m doing.
           </h3>
           <h4 ref={subtitleRef} className="card-subtitle"></h4>
         </div>

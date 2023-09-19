@@ -1,7 +1,7 @@
 "use client";
 
-import SideBar from "@/components/SideBar";
-import { FC, useState } from "react";
+import Sidebar from "@/components/Sidebar";
+import { FC } from "react";
 import { TECH_STACK_CATEGORIES } from "@/config";
 import { Icons } from "@/components/Icons";
 
@@ -10,14 +10,9 @@ interface TechProps {}
 type IconKeys = keyof typeof Icons;
 
 const Tech: FC<TechProps> = ({}) => {
-  const [showSideBar, setShowSideBar] = useState(false);
-
   return (
     <>
-      <div
-        className={`w-full ${showSideBar ? "SideBarOpened" : ""}`}
-        onClick={() => setShowSideBar(false)}
-      >
+      <div className="w-full">
         <h1 className="text-4xl text-center font-bold mb-8">My Tech Stack</h1>
 
         <div className="flex pt-4">
@@ -48,15 +43,8 @@ const Tech: FC<TechProps> = ({}) => {
           </div>
         </div>
       </div>
-      <button
-        className="text-gray-700 hover:text-gray-400 fixed right-0 top-[50%] -translate-y-[4rem] -translate-x-[10px] hover:-translate-x-[15px] bg-gray-700 rounded-tl-full rounded-bl-full h-[6rem] w-[3rem] hover:scale-[1.2] transition "
-        onClick={() => setShowSideBar(!showSideBar)}
-      >
-        open
-      </button>
-      {showSideBar && (
-        <SideBar setShowSideBar={setShowSideBar} showSideBar={showSideBar} />
-      )}
+
+      <Sidebar categories={TECH_STACK_CATEGORIES} />
     </>
   );
 };

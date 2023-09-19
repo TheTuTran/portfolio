@@ -101,10 +101,6 @@ body::-webkit-scrollbar-track {
   z-index: 10;
 }
 
-.SideBarOpened {
-  transform: translateX(-20vw);
-}
-
 @layer base {
   * {
     @apply border-border;

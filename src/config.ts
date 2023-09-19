@@ -35,6 +35,17 @@ export const CARDS = [
   },
 ];
 
+type AboutCategoriesType = {
+  [key: string]: string[];
+};
+
+export const ABOUT_CATEGORIES: AboutCategoriesType = {
+  "Hobbies & Interests": [],
+  Education: [],
+  Certificates: [],
+  "Relevant Coursework": [],
+};
+
 type TechStackCategoriesType = {
   [key: string]: string[];
 };
@@ -52,7 +63,12 @@ export const TECH_STACK_CATEGORIES: TechStackCategoriesType = {
   ],
   "Frontend Frameworks": ["React", "Vue.js"],
   "Backend Frameworks": ["Node.js"],
-  "Frontend Libraries": ["jQuery", "TailwindCSS", "styled-components"],
+  "Frontend Libraries": [
+    "jQuery",
+    "TailwindCSS",
+    "styled-components",
+    "Bootstrap",
+  ],
   Database: [
     "PostgreSQL",
     "MySQL",
@@ -63,7 +79,15 @@ export const TECH_STACK_CATEGORIES: TechStackCategoriesType = {
     "Supabase",
     "PrismaDB",
   ],
-  DevTools: ["AWS", "Google Cloud Platform"],
+  DevTools: [
+    "AWS",
+    "Google Cloud Platform",
+    "GitHub",
+    "GitLab",
+    "Vercel",
+    "Netlify",
+    "Docker",
+  ],
   Testing: ["Jest", "Mocha", "JUnit", "Cypress"],
 };
 
@@ -135,11 +159,35 @@ export const PROJECTS: Project[] = [
   },
 ];
 
-type ExperienceType = {
-  [key: string]: string[];
+type Job = {
+  title: string;
+  startDate: string;
+  endDate: string;
+  description: string[];
+  location: string;
 };
 
-export const EXPERIENCES: ExperienceType = {
-  "Job A": [" Description A"],
-  "Job B": ["Description B"],
-};
+export const EXPERIENCES: Job[] = [
+  {
+    title: "Wash Attendant",
+    startDate: "August 2019",
+    endDate: "May 2023",
+    description: [
+      "Managed operational procedures to ensure efficient service, similar to optimizing productivity in coding.",
+      "Trained staff in best practices, akin to guiding a team and working in a team environment.",
+      "Handled problematic situations independently, highlighting problem-solving skills often needed in software development.",
+    ],
+    location: "Saint Louis, MO",
+  },
+  {
+    title: "OSS Student Worker",
+    startDate: "May 2023",
+    endDate: "August 2023",
+    description: [
+      "Contributed to an open-source project, demonstrating software development skills in frontend design.",
+      "Resolved technical challenges to enhance code efficiency and performance.",
+      "Added new features to improve software functionality and user experience.",
+    ],
+    location: "Saint Louis, MO",
+  },
+];
