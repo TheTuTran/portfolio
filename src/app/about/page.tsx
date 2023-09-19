@@ -142,7 +142,7 @@ const About: FC<AboutProps> = () => {
               <li className="mb-4">
                 <strong>Databases:</strong> Designed and maintained relational
                 databases using SQL. Understand the concepts of normalization,
-                data management, and ERD's.
+                data management, and ERD&apos;s.
               </li>
               <li className="mb-4">
                 <strong>Software Engineering:</strong> Participated in full
