@@ -2,18 +2,22 @@ import { FC } from "react";
 import { TECH_STACK_CATEGORIES } from "@/config";
 import { Icons } from "./Icons";
 
-interface TechStackSideButtonsProps {}
+interface SideBarProps {
+  setShowSideBar: (boolean: boolean) => void;
+  showSideBar: boolean;
+}
 
 type IconKeys = keyof typeof Icons;
 
-const TechStackSideButtons: FC<TechStackSideButtonsProps> = ({}) => {
+const SideBar: FC<SideBarProps> = ({ setShowSideBar, showSideBar }) => {
   return (
-    <section className="bg-gray-800 transition fixed right-0 bottom-0 h-full w-[20%] flex flex-col justify-around items-center ">
+    <section className="bg-gray-900 transition fixed right-0 bottom-0 h-full w-[20vw] flex flex-col justify-around items-center ">
       {Object.keys(TECH_STACK_CATEGORIES).map((category) => {
         const IconComponent = Icons[category as IconKeys];
         return (
           <a
             href={`#${category}`}
+            onClick={() => setShowSideBar(false)}
             key={category}
             className="flex items-center mb-4 cursor-pointer hover:scale-102"
           >
@@ -32,4 +36,4 @@ const TechStackSideButtons: FC<TechStackSideButtonsProps> = ({}) => {
   );
 };
 
-export default TechStackSideButtons;
+export default SideBar;

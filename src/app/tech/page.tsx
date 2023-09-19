@@ -1,6 +1,6 @@
 "use client";
 
-import TechStackSideButtons from "@/components/TechStackSideButtons";
+import SideBar from "@/components/SideBar";
 import { FC, useState } from "react";
 import { TECH_STACK_CATEGORIES } from "@/config";
 import { Icons } from "@/components/Icons";
@@ -14,7 +14,10 @@ const Tech: FC<TechProps> = ({}) => {
 
   return (
     <>
-      <div className="w-full" onClick={() => setShowSideBar(false)}>
+      <div
+        className={`w-full ${showSideBar ? "SideBarOpened" : ""}`}
+        onClick={() => setShowSideBar(false)}
+      >
         <h1 className="text-4xl text-center font-bold mb-8">My Tech Stack</h1>
 
         <div className="flex pt-4">
@@ -51,7 +54,9 @@ const Tech: FC<TechProps> = ({}) => {
       >
         open
       </button>
-      {showSideBar && <TechStackSideButtons />}
+      {showSideBar && (
+        <SideBar setShowSideBar={setShowSideBar} showSideBar={showSideBar} />
+      )}
     </>
   );
 };
