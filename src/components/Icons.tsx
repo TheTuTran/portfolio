@@ -34,6 +34,7 @@ import {
   SiJest,
   SiJunit5,
   SiPrisma,
+  SiPlanetscale,
 } from "react-icons/si";
 import { BiLogoDocker, BiLogoJquery, BiLogoNetlify } from "react-icons/bi";
 import { VscDebugAll } from "react-icons/vsc";
@@ -42,6 +43,7 @@ import { GiClassicalKnowledge } from "react-icons/gi";
 import { IoLogoVercel } from "react-icons/io5";
 import { PiCertificateBold } from "react-icons/pi";
 import { BsFillBootstrapFill } from "react-icons/bs";
+import { TbBrandNextjs } from "react-icons/tb";
 
 export const Icons = {
   "Hobbies & Interests": ({ className }: LucideProps) => (
@@ -59,9 +61,6 @@ export const Icons = {
   Languages: ({ className }: LucideProps) => <FaCode className={className} />,
   "Frontend Frameworks": ({ className }: LucideProps) => (
     <FaReact className={className} />
-  ),
-  "Backend Frameworks": ({ className }: LucideProps) => (
-    <FaServer className={className} />
   ),
 
   "Frontend Libraries": ({ className }: LucideProps) => (
@@ -90,8 +89,11 @@ export const Icons = {
   HTML: ({ className }: LucideProps) => <FaHtml5 className={className} />,
   CSS: ({ className }: LucideProps) => <FaCss3Alt className={className} />,
   React: ({ className }: LucideProps) => <FaReact className={className} />,
+  "Next.js": ({ className }: LucideProps) => (
+    <TbBrandNextjs className={className} />
+  ),
   "Vue.js": ({ className }: LucideProps) => <FaVuejs className={className} />,
-  "Node.js": ({ className }: LucideProps) => <FaNodeJs className={className} />,
+
   jQuery: ({ className }: LucideProps) => (
     <BiLogoJquery className={className} />
   ),
@@ -119,6 +121,9 @@ export const Icons = {
   AWS: ({ className }: LucideProps) => <FaAws className={className} />,
   "Google Cloud Platform": ({ className }: LucideProps) => (
     <SiGooglecloud className={className} />
+  ),
+  PlanetScale: ({ className }: LucideProps) => (
+    <SiPlanetscale className={className} />
   ),
   GitHub: ({ className }: LucideProps) => (
     <AiFillGithub className={className} />

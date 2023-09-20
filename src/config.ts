@@ -61,9 +61,8 @@ export const TECH_STACK_CATEGORIES: TechStackCategoriesType = {
     "HTML",
     "CSS",
   ],
-  "Frontend Frameworks": ["React", "Vue.js"],
-  "Backend Frameworks": ["Node.js"],
-  "Frontend Libraries": [
+  "Frontend Frameworks": ["React", "Next.js", "Vue.js"],
+  "UI/UX Libraries": [
     "jQuery",
     "TailwindCSS",
     "styled-components",
@@ -78,16 +77,10 @@ export const TECH_STACK_CATEGORIES: TechStackCategoriesType = {
     "Firebase",
     "Supabase",
     "PrismaDB",
+    "PlanetScale",
   ],
-  DevTools: [
-    "AWS",
-    "Google Cloud Platform",
-    "GitHub",
-    "GitLab",
-    "Vercel",
-    "Netlify",
-    "Docker",
-  ],
+  DevTools: ["AWS", "Google Cloud Platform", "Vercel", "Netlify", "Docker"],
+  "Version Control & Collaboration": ["GitHub", "GitLab"],
   Testing: ["Jest", "Mocha", "JUnit", "Cypress"],
 };
 
@@ -103,59 +96,67 @@ type Project = {
 export const PROJECTS: Project[] = [
   {
     title: "This Portfolio",
-    technology: ["tech A1", "tech A2"],
+    technology: ["React", "TailwindCSS"],
     githubLink: "https://github.com/TheTuTran/portfolio",
     demoLink: "https://tran-portfolio.vercel.app/",
     image: "/portfolio.png",
-    description: "some description",
+    description:
+      "A personal showcase of professional achievements, experiences, and technical projects, this portfolio offers a reflection of my both technical skills and design aesthetics.",
   },
   {
     title: "Echo - Reddit Copy Cat",
-    technology: ["tech B1", "tech B2"],
+    technology: ["React", "TailwindCSS", "PrismaDB", "PlanetScale", "MySQL"],
     githubLink: "https://github.com/TheTuTran/Echo",
     demoLink: "https://echo-tran.vercel.app/",
     image: "echo.png",
-    description: "some description",
+    description:
+      "A community platform inspired by Reddit, Echo lets users post content, comment, and engage with others. Echo offers a simplified user experience focusing on content and community interactions.",
   },
   {
     title: "Gallery of Glosses",
-    technology: ["tech B1", "tech B2"],
+    technology: ["React", "TypeScript", "Jest", "Cypress"],
     githubLink: "https://github.com/TheTuTran/Gallery-of-Glosses",
     demoLink: "https://gallery-of-glosses.vercel.app/",
     image: "gog.png",
-    description: "some description",
+    description:
+      "A project created over the summer, Gallery of Glosses was one of my first web creation. Gallery of Glosses is a frontend site that showcases a variety of glosses fetched from an API.",
   },
   {
     title: "Spotify Clone",
-    technology: ["tech B1", "tech B2"],
+    technology: ["React", "Stripe", "Supabase", "PostgreSQL"],
     githubLink: "https://github.com/TheTuTran/spotify-clone",
     demoLink: "https://tran-spotify-clone.vercel.app/",
     image: "spotify.png",
-    description: "some description",
+    description:
+      "An audio streaming platform mimicking Spotify's core features. You can find a video demo on the github repo on how it works. The site might not be currently functioning because it requires me to actively interact with the Supabase backend. Users can explore, play, and upload their favorite tracks and playlists.",
   },
   {
     title: "Ecommerce Admin",
-    technology: ["tech B1", "tech B2"],
+    technology: ["React", "JavaScript", "MongoDB", "TailwindCSS", "AWS"],
     githubLink: "https://github.com/TheTuTran/ecommerce-admin",
-    demoLink: "https://demo.projectB.com",
-    image: "/path/to/imageB.jpg",
-    description: "some description",
+    demoLink: "",
+    image: "ecommerce_admin.png",
+    description:
+      "A backend dashboard designed for e-commerce businesses. It facilitates product management and order tracking. The products are uploaded to a mongoDB database with the images being stored in an AWS bucket. A video demo should be posted on how it works. There isn't a live demo because it only works if the user signed in is using my account.",
   },
   {
-    title: "Eccomerce Front",
-    technology: ["tech B1", "tech B2"],
+    title: "Ecommerce Front",
+    technology: ["React", "JavaScript", "Stripe", "styled-components"],
     githubLink: "https://github.com/TheTuTran/ecommerce-front",
     demoLink: "https://ecommerce-thetutran.vercel.app/",
-    image: "/path/to/imageB.jpg",
-    description: "some description",
+    image: "ecommerce_front.png",
+    description:
+      "The frontend page for the e-commerce admin dashboard. It's a simple website where users can browse products and make purchases seamlessly. It is currently on testing mode for stripe, so payments will not go through.",
   },
   {
     title: "Python Seeking Alpha Webscraper",
-    technology: ["tech B1", "tech B2"],
-    githubLink: "https://github.com/yourusername/projectB",
-    demoLink: "https://demo.projectB.com",
-    image: "/path/to/imageB.jpg",
-    description: "some description",
+    technology: ["Python"],
+    githubLink:
+      "https://github.com/TheTuTran/Simple-Python-Apps/tree/main/scrapers",
+    demoLink: "https://discord.gg/QHeS3tzszy",
+    image: "scrapper.png",
+    description:
+      "A simple webscraper developed in Python, designed to extract news data from the Seeking Alpha platform. It takes the extracted data, and with the help of replit, this code creates a 24/7 discord bot that posts this data to channels. The live demo is a discord link that users where users can see the discord bot in action.",
   },
 ];
 
