@@ -1,34 +1,29 @@
 export const CARDS = [
   {
-    image:
-      "https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1150&q=80",
+    image: "https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1150&q=80",
     text: "About Me",
     destination: "about",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3BhY2V8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=500&q=60",
+    image: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3BhY2V8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=500&q=60",
 
     text: "Tech Stack",
     destination: "tech",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1610296669228-602fa827fc1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3BhY2V8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=500&q=60",
+    image: "https://images.unsplash.com/photo-1610296669228-602fa827fc1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3BhY2V8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=500&q=60",
 
     text: "Projects",
     destination: "projects",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    image: "https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
 
     text: "Experience",
     destination: "experience",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1543722530-d2c3201371e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80",
+    image: "https://images.unsplash.com/photo-1543722530-d2c3201371e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80",
 
     text: "Contact Me",
     destination: "contact",
@@ -51,34 +46,10 @@ type TechStackCategoriesType = {
 };
 
 export const TECH_STACK_CATEGORIES: TechStackCategoriesType = {
-  Languages: [
-    "JavaScript",
-    "TypeScript",
-    "Python",
-    "Java",
-    "C++",
-    "R",
-    "HTML",
-    "CSS",
-  ],
+  Languages: ["JavaScript", "TypeScript", "Python", "Java", "C++", "R", "HTML", "CSS"],
   "Frontend Frameworks": ["React", "Next.js", "Vue.js"],
-  "UI/UX Libraries": [
-    "jQuery",
-    "TailwindCSS",
-    "styled-components",
-    "Bootstrap",
-  ],
-  Database: [
-    "PostgreSQL",
-    "MySQL",
-    "SQLite",
-    "MongoDB",
-    "Redis",
-    "Firebase",
-    "Supabase",
-    "PrismaDB",
-    "PlanetScale",
-  ],
+  "UI/UX Libraries": ["jQuery", "TailwindCSS", "styled-components", "Bootstrap"],
+  Database: ["PostgreSQL", "MySQL", "SQLite", "MongoDB", "Redis", "Firebase", "Supabase", "PrismaDB", "PlanetScale"],
   DevTools: ["AWS", "Google Cloud Platform", "Vercel", "Netlify", "Docker"],
   "Version Control & Collaboration": ["GitHub", "GitLab"],
   Testing: ["Jest", "Mocha", "JUnit", "Cypress"],
@@ -100,9 +71,11 @@ export const PROJECTS: Project[] = [
     githubLink: "https://github.com/TheTuTran/portfolio",
     demoLink: "https://tran-portfolio.vercel.app/",
     image: "/portfolio.png",
-    description:
-      "A personal showcase of professional achievements, experiences, and technical projects, this portfolio offers a reflection of my both technical skills and design aesthetics.",
+    description: "A personal showcase of professional achievements, experiences, and technical projects, this portfolio offers a reflection of my both technical skills and design aesthetics.",
   },
+];
+
+export const OUTDATED_PROJECTS: Project[] = [
   {
     title: "Echo - Reddit Copy Cat",
     technology: ["React", "TailwindCSS", "PrismaDB", "PlanetScale", "MySQL"],
@@ -151,9 +124,8 @@ export const PROJECTS: Project[] = [
   {
     title: "Python Seeking Alpha Webscraper",
     technology: ["Python"],
-    githubLink:
-      "https://github.com/TheTuTran/Simple-Python-Apps/tree/main/scrapers",
-    demoLink: "https://discord.gg/QHeS3tzszy",
+    githubLink: "https://github.com/TheTuTran/Simple-Python-Apps/tree/main/scrapers",
+    demoLink: "",
     image: "scrapper.png",
     description:
       "A simple webscraper developed in Python, designed to extract news data from the Seeking Alpha platform. It takes the extracted data, and with the help of replit, this code creates a 24/7 discord bot that posts this data to channels. The live demo is a discord link that users where users can see the discord bot in action.",

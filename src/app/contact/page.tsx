@@ -37,8 +37,7 @@ const Contact: FC<ContactProps> = () => {
     onSuccess: () => {
       toast({
         title: "Message Sent!",
-        description:
-          "Thanks for the message, I'll get right back once I see the message.",
+        description: "Thanks for the message, I'll get right back once I see the message.",
         variant: "default",
       });
       setName("");
@@ -50,10 +49,8 @@ const Contact: FC<ContactProps> = () => {
   return (
     <div className="flex flex-col items-center shadow-md rounded-md ">
       <h1 className="text-3xl font-bold mb-4 text-center ">Contact Me</h1>
-      <p className="text-lg mb-4 text-center">
-        Have a project in mind or just want to say hi? Feel free to reach out!
-      </p>
-
+      <p className="text-lg mb-4 text-center">Have a project in mind or just want to say hi? Feel free to reach out!</p>
+      {/*
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -118,8 +115,9 @@ const Contact: FC<ContactProps> = () => {
         </div>
       </form>
 
+*/}
+
       <div className="mt-6 text-center bg-gray-700 py-4 px-6 flex items-center justify-center gap-4 rounded-md">
-        <p>Other ways to get in touch: </p>
         <Link href="mailto:tutran.stl@gmail.com">
           <AiTwotoneMail size={40} />
         </Link>

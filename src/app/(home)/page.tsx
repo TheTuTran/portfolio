@@ -90,9 +90,7 @@ function Home() {
 
   return (
     <div>
-      <h1 className="text-2xl">
-        Hello 👋. Click on a card to view my portfolio.
-      </h1>
+      <h1 className="text-2xl">Hello 👋. Click on a card to view my portfolio.</h1>
       <CardTrack scroll={scroll} trackRef={trackRef} />
 
       <PlusCrosshair />
